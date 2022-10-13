@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            credentials {
+                username = "erasmusisjohn@gmail.com"
+                password = "Portatil@091821"
+            }
+            url = "https://multi.jfrog.io/artifactory"
+        }
+    }
+}
+rootProject.name = "Test Library"
+include ':app'
+include ':sample'
